@@ -73,9 +73,9 @@
                                             value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                         @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
                                         @enderror
                                     </div>
                                     <div class="input-group input-group-outline mb-3">
@@ -85,9 +85,9 @@
                                             required autocomplete="current-password">
 
                                         @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
                                         @enderror
                                     </div>
                                     <div class="form-check form-switch d-flex align-items-center mb-3">
@@ -101,8 +101,8 @@
                                     </div>
                                     <p class="mt-4 text-sm text-center">
                                         Don't have an account?
-                                        <a href="../pages/sign-up.html"
-                                            class="text-primary text-gradient font-weight-bold">Sign up</a>
+                                        <a href="/register" class="text-primary text-gradient font-weight-bold">Sign
+                                            up</a>
                                     </p>
                                 </form>
                             </div>
