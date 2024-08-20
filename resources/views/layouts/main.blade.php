@@ -1,22 +1,22 @@
 @include('layouts.meta')
 
-<body class="g-sidenav-show  bg-gray-200">
+<body>
 
-    <!-- Sidebar -->
+    <!-- ======= Header ======= -->
+    @include('layouts.navbar')
+
+    <!-- ======= Sidebar ======= -->
     @include('layouts.sidebar')
-    <!-- End Sidebar -->
 
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <main id="main" class="main">
 
-        <!-- Navbar -->
-        @include('layouts.navbar')
-        <!-- End Navbar -->
+        @yield('content')
 
-        <div class="container-fluid py-4">
-            <!-- Content -->
-            @yield('content')
-            <!-- End Content -->
+    </main><!-- End #main -->
 
-            <!-- footer -->
-            @include('layouts.footer')
-            <!-- End footer -->
+    <!-- ======= Footer ======= -->
+    @include('layouts.footer')
+
+</body>
+
+</html>
